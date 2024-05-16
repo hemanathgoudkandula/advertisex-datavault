@@ -6,7 +6,7 @@
 
 {%- set source_model = "v_stg_ad_impressions" -%}
 {%- set src_pk = "ad_impressions_hk" -%}
-{%- set src_fk = ["ad_impressions_hk"] -%}
+{%- set src_fk = ["user_id","ad_impressions_hk"] -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 

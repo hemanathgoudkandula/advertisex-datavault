@@ -13,7 +13,7 @@ ranked_columns:
             - ad_impressions_hashdiff
             - load_date
         order_by :
-            load_date: asc
+            id: asc
 derived_columns:
     source: "!1"
     record_source: " 'S3' "

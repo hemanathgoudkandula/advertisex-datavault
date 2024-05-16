@@ -1,7 +1,7 @@
 models:
-  - name: v_stg_ad_impressions
+  - name: raw_ad_impressions
     columns:
-      - name: Id
+      - name: id
         tests:
           - not_null
           - unique
