@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: ad_impressions
+    database: advertisex
+    schema: advertisex
+    tables:
+      - name: AD_IMPRESSIONS
+        columns:
+          - name: Id
+            tests:
+              - not_null
+              - unique
+          - name: user_id
+            tests:
+              - not_null
+              - unique
+          - name: ad_creative_id
+          - name: timestamp
+          - name: website
+          - name: load_date                            
+      # - name: order
