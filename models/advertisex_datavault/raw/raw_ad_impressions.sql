@@ -11,5 +11,5 @@ ad_Creative_id,
 timestamp,
 website,
 load_date
-from {{source('ad_impressions','AD_IMPRESSIONS')}}
+from {{source('advertisex','AD_IMPRESSIONS')}}
 

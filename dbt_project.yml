@@ -43,11 +43,13 @@ models:
     # Applies to all files under models/example/
     models:
       advertisex_datavault:
-        ad_impressions:
-          ad_impressions_hub:
-            +materialized: table
-          ad_impression_link:
-            +materialized: table
-          ad_impressions_sat:
-            +materialized: table
-  
+        hubs:          
+          +materialized: table
+        links:          
+          +materialized: table
+        sat:
+          +materialized: table
+        raw:
+          +materialized: view
+        v_stg:
+          +materialized: view
