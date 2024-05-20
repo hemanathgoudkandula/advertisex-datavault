@@ -1,0 +1,16 @@
+models:
+  - name: raw_clicks_conversions
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+      - name: ad_campaign_id
+        tests:
+          - not_null              
+      - name: event_timestamp
+      - name: conversion_type
+      - name: load_date

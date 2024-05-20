@@ -1,0 +1,15 @@
+models:
+  - name: raw_ad_impressions
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: ad_creation_id
+      - name: timestamp
+      - name: website
+      - name: load_date

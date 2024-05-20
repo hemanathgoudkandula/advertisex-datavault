@@ -1,0 +1,17 @@
+models:
+  - name: ad_impressions_sat
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: ad_impressions_hk
+        tests:
+          - not_null
+          - unique      
+      - name: HASHDIFF
+      - name: AD_CREATIVE_ID
+      - name: timestamp
+      - name: website
+      - name: load_date
+      - name: record_source

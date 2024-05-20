@@ -1,0 +1,27 @@
+models:
+  - name: raw_bids_request
+    columns:
+      - name: ID      
+        tests:
+          - not_null
+          - unique                                
+      - name: USER_ID
+        tests:
+          - not_null                  
+      - name: AGE
+      - name: GENDER
+      - name: DEVICE
+      - name: TIMESTAMP
+      - name: AUCTION_ID
+        tests:
+          - not_null                  
+      - name: AD_FORMAT
+      - name: AD_POSITION
+      - name: AD_RANK
+      - name: BID_AMOUNT
+      - name: QUALITY_SCORE
+      - name: AUDIENCE_AGE
+      - name: DAY_PARTING
+      - name: AUDIENCE_GENDER
+      - name: LOCATION 
+      - name: LOAD_DATE 

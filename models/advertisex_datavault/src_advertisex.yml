@@ -1,0 +1,62 @@
+version: 2
+
+sources:
+  - name: advertisex
+    database: advertisex
+    schema: advertisex
+    tables:
+      - name: AD_IMPRESSIONS
+        columns:
+          - name: Id
+            tests:
+              - not_null
+              - unique
+          - name: user_id
+            tests:
+              - not_null
+              - unique
+          - name: ad_creative_id
+          - name: timestamp
+          - name: website
+          - name: load_date                            
+      - name: clicks_conversions
+        columns:
+          - name: Id
+            tests:
+              - not_null
+              - unique
+          - name: user_id
+            tests:
+              - not_null
+          - name: ad_campaign_id
+            tests:
+              - not_null                  
+          - name: event_timestamp
+          - name: conversion_type
+          - name: load_date
+      - name: bids_request
+        columns:          
+          - name: ID
+            tests:
+              - not_null
+              - unique                                
+          - name: USER_ID
+            tests:
+              - not_null                  
+          - name: AGE
+          - name: GENDER
+          - name: DEVICE
+          - name: TIMESTAMP
+          - name: AUCTION_ID
+            tests:
+              - not_null                  
+          - name: AD_FORMAT
+          - name: AD_POSITION
+          - name: AD_RANK
+          - name: BID_AMOUNT
+          - name: QUALITY_SCORE
+          - name: AUDIENCE_AGE
+          - name: DAY_PARTING
+          - name: AUDIENCE_GENDER
+          - name: LOCATION 
+          - name: LOAD_DATE 

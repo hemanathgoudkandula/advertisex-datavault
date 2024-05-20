@@ -1,0 +1,12 @@
+models:
+  - name: bids_request_hub
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: bids_request_hk
+        tests:
+          - not_null
+          - unique      
+      - name: load_date
+      - name: record_source
