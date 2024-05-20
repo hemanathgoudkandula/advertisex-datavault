@@ -39,15 +39,17 @@ vars:
   surrogate_key_treat_nulls_as_empty_strings: True
 
 models:
-  advertisex_datavault:
-    # Applies to all files under models/example/
-    hubs:          
-      +materialized: table
-    links:          
-      +materialized: table
-    sat:
-      +materialized: table
-    raw:
-      +materialized: view
-    v_stg:
-      +materialized: view
+  # advertisex-datavault:
+  #   # Applies to all files under models/example/
+  #   models:
+  #     advertisex_datavault:
+  #       hubs:          
+  #         +materialized: table
+  #       links:          
+  #         +materialized: table
+  #       sat:
+  #         +materialized: table
+  #       raw:
+  #         +materialized: view
+  #       v_stg:
+  #         +materialized: view
