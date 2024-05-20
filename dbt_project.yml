@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'advertisex_datavault'
 version: '1.0.0'
 config-version: 2
 
@@ -35,21 +35,23 @@ clean-targets:         # directories to be removed by `dbt clean`
 # continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
-vars:
-  surrogate_key_treat_nulls_as_empty_strings: True
+# vars:
+#   surrogate_key_treat_nulls_as_empty_strings: True
 
+# models:
+  # advertisex-datavault:
+  #   # Applies to all files under models/example/
 models:
   advertisex_datavault:
-    # Applies to all files under models/example/
-    models:
-      advertisex_datavault:
-        hubs:          
-          +materialized: table
-        links:          
-          +materialized: table
-        sat:
-          +materialized: table
-        raw:
-          +materialized: view
-        v_stg:
-          +materialized: view
+    hubs:      
+      +materialized: table
+    links:          
+      +materialized: table
+    sat:
+      +materialized: table
+    raw:
+      +materialized: view
+    v_stg:
+      +materialized: view
+  # models:
+  #   +materailized: table
