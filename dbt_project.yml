@@ -43,15 +43,15 @@ clean-targets:         # directories to be removed by `dbt clean`
   #   # Applies to all files under models/example/
 models:
   advertisex_datavault:
-    hubs:            
-      materialized: table
+    hubs:      
+      +materialized: table
     links:          
-      materialized: table
+      +materialized: table
     sat:
-      materialized: table
+      +materialized: table
     raw:
-      materialized: view
+      +materialized: view
     v_stg:
-      materialized: view
+      +materialized: view
   # models:
   #   +materailized: table
