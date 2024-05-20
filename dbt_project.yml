@@ -41,15 +41,13 @@ vars:
 models:
   advertisex_datavault:
     # Applies to all files under models/example/
-    models:
-      advertisex_datavault:
-        hubs:          
-          +materialized: table
-        links:          
-          +materialized: table
-        sat:
-          +materialized: table
-        raw:
-          +materialized: view
-        v_stg:
-          +materialized: view
+    hubs:          
+      +materialized: table
+    links:          
+      +materialized: table
+    sat:
+      +materialized: table
+    raw:
+      +materialized: view
+    v_stg:
+      +materialized: view
