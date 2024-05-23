@@ -1,3 +1,4 @@
+version: 2
 models:
   - name: v_stg_ad_impressions
     columns:

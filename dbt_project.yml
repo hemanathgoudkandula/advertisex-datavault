@@ -53,5 +53,3 @@ models:
       +materialized: view
     v_stg:
       +materialized: view
-  # models:
-  #   +materailized: table

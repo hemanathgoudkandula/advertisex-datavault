@@ -1,14 +1,12 @@
 version: 2
 models:
-  - name: ad_impressions_hub
+  - name: clicks_conversions_hub
     columns:
       - name: user_id
         tests:
           - not_null
-          - unique
-      - name: ad_impressions_hk
+      - name: clicks_conversions_hk
         tests:
-          - not_null
-          - unique      
+          - not_null    
       - name: load_date
       - name: record_source

@@ -1,0 +1,16 @@
+version: 2
+models:
+  - name: clicks_conversions_sat
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: clicks_conversions_hk
+        tests:
+          - not_null
+      - name: HASHDIFF
+      - name: AD_CAMPAIGN_ID
+      - name: EVENT_TIMESTAMP
+      - name: CONVERSION_TYPE
+      - name: LOAD_DATE
+      - name: RECORD_SOURCE
