@@ -1,3 +1,4 @@
+version: 2
 models:
   - name: ad_impressions_sat
     columns:

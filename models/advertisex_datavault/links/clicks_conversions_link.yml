@@ -1,13 +1,12 @@
 version: 2
 models:
-  - name: bids_request_link
+  - name: clicks_conversions_link
     columns:
       - name: user_id
         tests:
           - not_null
-      - name: bids_request_hk
+      - name: clicks_conversions_hk
         tests:
-          - not_null
-          - unique      
+          - not_null 
       - name: load_date
       - name: record_source
